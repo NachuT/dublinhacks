@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SilverCountdownApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dublin Hacks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="CountdownController as countdownCtrl">
+<header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#tracks">Tracks</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li>
+                <a href="https://discord.com" target="_blank">
+                    <img class="discord-logo" src="discord.png" alt="Discord">
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank">
+                    <img class="instagram-logo" src="black-instagram-icon.webp" alt="Instagram">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Dublin Hacks</h1>
+    <p>March 8, 2025 @ Dublin High School Theater</p>
+    <button ng-mouseover="buttonHover()" ng-mouseout="buttonOut()">Devpost</button>
+    <div class="countdown" ng-class="{ 'pulse': countdownCtrl.pulse }">Countdown: <span
+            ng-bind="countdownCtrl.countdown"></span></div>
+    <a href="https://example.com/register" class="register-button">Register Now!</a>
+</div>
+
+<!-- Scrollable sections -->
+<section id="about" class="scroll-animation">
+    <h2>About Dublin Hacks</h2>
+    <p>Join us for an innovative hackathon where creativity meets technology...</p>
+</section>
+
+<section id="schedule" class="schedule-container">
+    <div class="schedule-content">
+        <h1 class="schedule-title">Schedule</h1>
+        <div class="schedule-list">
+            <div class="schedule-item">
+                <h2 class="schedule-time">09:00 AM</h2>
+                <h2 class="schedule-event">Check-in</h2>
+            </div>
+            <div class="schedule-item">
+                <h2 class="schedule-time">09:30 AM</h2>
+                <h2 class="schedule-event">Opening Ceremony</h2>
+            </div>
+            <div class="schedule-item">
+                <h2 class="schedule-time">09:45 AM</h2>
+                <h2 class="schedule-event">Keynote Speaker 1</h2>
+            </div>
+            <div class="schedule-item">
+                <h2 class="schedule-time">10:00 AM</h2>
+                <h2 class="schedule-event">Hacking Starts</h2>
+            </div>
+            <div class="schedule-item">
+                <h2 class="schedule-time">11:00 AM</h2>
+                <h2 class="schedule-event">Git Workshop</h2>
+            </div>
+            <div class="schedule-item">
+                <h2 class="schedule-time">12:00 PM</h2>
+                <h2 class="schedule-event"> ML Workshop </h2>
+            </div>
+            <div class="schedule-item">
+                <h2 class="schedule-time">12:30 PM</h2>
+                <h2 class="schedule-event">Lunch</h2>
+            </div>
+            <div class="schedule-item">
+                <h2 class="schedule-time">03:00 PM</h2>
+                <h2 class="schedule-event">Keynote Speaker</h2>
+            </div>
+            <div class="schedule-item">
+                <h2 class="schedule-time">06:00 PM</h2>
+                <h2 class="schedule-event">Dinner</h2>
+            </div>
+            <div class="schedule-item">
+                <h2 class="schedule-time">06:15 PM</h2>
+                <h2 class="schedule-event">Coding Ends</h2>
+            </div>
+            <div class="schedule-item">
+                <h2 class="schedule-time">07:00 PM</h2>
+                <h2 class="schedule-event">Judging Begins</h2>
+            </div>
+            <div class="schedule-item">
+                <h2 class="schedule-time">09:30 PM</h2>
+                <h2 class="schedule-event">Awards and Closing Ceremony</h2>
+            </div>
+        </div>
+        <h2 class="schedule-note">
+            <span>This schedule is </span>
+            <strong>subject to change.</strong>
+            <span> Please check back periodically or right before the day of the hackathon.</span>
+        </h2>
+    </div>
+</section>
+<section id="tracks" class="tracks-section">
+    <h2 class="tracks-header">Tracks</h2>
+    <div class="tracks-container">
+        <div class="track-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="track-icon">
+                <path d="m3 11 18-5v12L3 14v-3z"></path>
+                <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
+            </svg>
+            <h3 class="track-title">Tbd</h3>
+        </div>
+        <div class="track-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="track-icon">
+                <path d="m3 11 18-5v12L3 14v-3z"></path>
+                <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
+            </svg>
+            <h3 class="track-title">Tbd</h3>
+        </div>
+        <div class="track-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="track-icon">
+                <path d="m3 11 18-5v12L3 14v-3z"></path>
+                <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
+            </svg>
+            <h3 class="track-title">Tbd</h3>
+        </div>
+    </div>
+</section>
+
+<section id="speakers" class="speakers-section">
+    <h2 class="speakers-header">Speakers</h2>
+    <div class="speakers-container">
+        <div class="speaker">
+            <div class="speaker-circle"></div>
+            <p class="speaker-name">TBA</p>
+        </div>
+        <div class="speaker">
+            <div class="speaker-circle"></div>
+            <p class="speaker-name">TBA</p>
+        </div>
+        <div class="speaker">
+            <div class="speaker-circle"></div>
+            <p class="speaker-name">TBA</p>
+        </div>
+    </div>
+</section>
+<!-- FAQ Section -->
+<section id="faq" class="faq-section">
+    <h2 class="faq-header">Frequently Asked Questions</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                What is the event about?
+            </button>
+            <div id="faq-answer-1" class="faq-answer">
+                <p>Our event is focused on showcasing the latest advancements in technology and innovation. We'll have
+                    speakers, workshops, and networking opportunities.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                How can I register for the event?
+            </button>
+            <div id="faq-answer-2" class="faq-answer">
+                <p>You can register by visiting our registration page and filling out the form. Early bird discounts are
+                    available!</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                Where will the event be held?
+            </button>
+            <div id="faq-answer-3" class="faq-answer">
+                <p>The event will be held at the downtown convention center. Check our website for the exact address and
+                    directions.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                What should I bring to the event?
+            </button>
+            <div id="faq-answer-4" class="faq-answer">
+                <p>Please bring your registration confirmation, a valid ID, and any materials you need for the
+                    workshops.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                Is there a dress code?
+            </button>
+            <div id="faq-answer-5" class="faq-answer">
+                <p>There is no specific dress code. However, we recommend business casual attire for a professional
+                    environment.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                Are there any vegetarian options available?
+            </button>
+            <div id="faq-answer-6" class="faq-answer">
+                <p>Yes, we will have vegetarian and vegan food options available. Please inform us of any dietary
+                    restrictions during registration.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7">
+                Can I bring a guest?
+            </button>
+            <div id="faq-answer-7" class="faq-answer">
+                <p>Yes, you can bring a guest. Please ensure they are also registered if required.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8">
+                Will there be any networking opportunities?
+            </button>
+            <div id="faq-answer-8" class="faq-answer">
+                <p>Yes, we have scheduled networking sessions where you can meet industry professionals and other
+                    attendees.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-9">
+                How can I become a speaker?
+            </button>
+            <div id="faq-answer-9" class="faq-answer">
+                <p>If you're interested in speaking at the event, please contact us through the speaker application page
+                    on our website.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-10">
+                What is the cancellation policy?
+            </button>
+            <div id="faq-answer-10" class="faq-answer">
+                <p>You can cancel your registration up to a week before the event for a full refund. After that, only
+                    partial refunds will be available.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-11">
+                How can I get in touch with the organizers?
+            </button>
+            <div id="faq-answer-11" class="faq-answer">
+                <p>You can reach us via the contact form on our website or by email at info@event.com.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-12">
+                Will the event be streamed online?
+            </button>
+            <div id="faq-answer-12" class="faq-answer">
+                <p>Yes, we will provide a live stream of the main sessions. Details will be available on our website
+                    closer to the event date.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sponsors" class="sponsors-section">
+    <h2 class="sponsors-header">Sponsors</h2>
+    <p class="sponsors-placeholder">To Be Added</p>
+</section>
+<section id="team" class="team-section">
+    <h2 class="team-header">Meet the Team</h2>
+    <div class="team-container">
+        <div class="team-member">
+            <div class="team-circle"></div>
+            <p class="team-name">TBA</p>
+        </div>
+        <div class="team-member">
+            <div class="team-circle"></div>
+            <p class="team-name">TBA</p>
+        </div>
+        <div class="team-member">
+            <div class="team-circle"></div>
+            <p class="team-name">TBA</p>
+        </div>
+        <div class="team-member">
+            <div class="team-circle"></div>
+            <p class="team-name">TBA</p>
+        </div>
+        <div class="team-member">
+            <div class="team-circle"></div>
+            <p class="team-name">TBA</p>
+        </div>
+        <div class="team-member">
+            <div class="team-circle"></div>
+            <p class="team-name">TBA</p>
+        </div>
+    </div>
+</section>
+<!-- Donation and Prospectus Section -->
+<section class="donate-section">
+    <a href="#donate" class="donate-button">Donate Now</a>
+    <a href="https://example.com" class="prospectus-button">View Prospectus</a>
+</section>
+
+
+<!-- AngularJS and script files -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
